@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!-- font  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Default Styles -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/columnlayout.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+        <!-- JavaScript -->
+        <script src="assets/js/validate.js" defer></script>
+        <script src="assets/js/preview.js" defer></script>
+        
+        <!-- favicons -->
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <title>Add Post | Deep Harquissandas</title>
+    </head>
+    <body id="#top">
+        <header>
+            <hgroup>
+                <h1>Deep Harquissandas</h1>
+                <h3>Computer Science Student</h3>
+            </hgroup>
+        </header>
+    
+        <div class="container">
+            <article class="columns">
+                <section class="column-middle" id="column1">
+                    <div id="addpost" class ="card">
+                        <h2>Add Post</h2>
+                        <form method="POST" action="addPost.php">
+                            <input type="text" id="title" placeholder="Title" name="title">
+                            <br>
+                            <textarea id="post" name="postText" cols="40" rows="11" placeholder="Enter your text here"></textarea>
+                            <div class="center-info">
+                                <button type="submit" name="post" id="postButton">Post</button>
+                                <button type="reset" name="reset" id="resetButton">Reset</button>
+                                <button type="button" name="preview" id="previewButton">Preview</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="column-left" id="column2">
+                    <div class="card">
+                        <h2>Navigation</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="../Portfolio/index.php">Home</a></li>
+                                <li><a href="../Portfolio/index.php#aboutme">About Me</a></li>
+                                <li><a href="../Portfolio/index.php#skills">Skills & Achievements</a></li>
+                                <li><a href="../Portfolio/index.php#education">Education & Qualifications</a></li>
+                                <li><a href="../Portfolio/index.php#experience">Experience</a></li>
+                                <li><a href="../Portfolio/index.php#contact">Contact Me</a></li>
+                                <li><a href="viewBlog.php">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section class="column-right" id="column3">
+                    <aside>
+                        <div class="card">
+                            <form action="viewBlog.php">
+                                <button class="buttonwidth" type="submit" name="returnblog" id="returnblog">Return to Blog</button>
+                            <form>
+                        </div>
+                    </aside>
+                </section>
+            </article>
+        </div>
+        <footer>
+            <h2><a href="#top">Back To Top</a></h2>
+            <p>Deep Harquissandas, Copyright &copy; 2019</p>
+        </footer>
+    </body>
+</html>

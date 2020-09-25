@@ -1,0 +1,37 @@
+CREATE TABLE BlogEntries(
+ ID int NOT NULL AUTO_INCREMENT,
+ title varchar(255),
+ post varchar(255),
+ timestamp int(11),
+ PRIMARY KEY (ID)
+);
+
+CREATE TABLE users(
+ ID int NOT NULL AUTO_INCREMENT,
+ username varchar(255),
+ password varchar(1000),
+ email text,
+ PRIMARY KEY (ID)
+);
+
+CREATE TABLE entries(
+ ID int NOT NULL AUTO_INCREMENT,
+ title varchar(255),
+ topic varchar(255),
+ post longtext,
+ timestamp int(11),
+ upvotes int(255),
+ userid int,
+ PRIMARY KEY (ID),
+ FOREIGN KEY (userid) REFRENCES users(ID)
+);
+
+CREATE TABLE BlogEntries(
+ ID int NOT NULL AUTO_INCREMENT,
+ title varchar(255),
+ post varchar(255),
+ timestamp int(11),
+ PRIMARY KEY (ID)
+);
+
+
